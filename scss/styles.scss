@@ -1,0 +1,107 @@
+$bcolor: bisque;
+$font: 'Merriweather', serif;
+$fontcolor: #f77;
+
+body {
+    background-color: $bcolor;
+    font-family: 'Cinzel', serif;
+    margin: 8px;
+}
+h1, h2, h3 {
+    color: lighten($color: black, $amount: 25%);
+    font-family: $font;
+}
+p {
+    font-family: $font;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+}
+.image {
+    max-width: 70%;
+    height: auto;
+    padding: 2em;
+}
+.imgs {
+    max-width: 100%;
+    height: auto;
+}
+div .imgs {
+    display: block;
+}
+.mynd {
+    max-width: 70%;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.myndStorm {
+    max-width: 100%;
+    height: auto;
+}
+.label {
+    padding-bottom: 1em;
+}
+.mybutton {
+    background-color: #f77;
+    font-size: 0.75em;
+    text-decoration: none;
+    padding: .2em .5em;
+}
+.card {
+    background-color: white;
+    border-radius: .4em;
+    padding: 2em;
+}
+.stretch {
+    display: grid;
+    justify-self: stretch;
+}
+.button {
+    background-color: #f77;
+    text-decoration: none;
+    padding: .2em .5em .2em .5em;
+    color: black;
+    display: block;
+    margin: .3em;
+    width: 7em;
+    text-align: center;
+    font-family: $font;
+}
+.button:hover {
+    background-color:darken(#f77,25%);
+}
+.anotherButton {
+    text-decoration: none;
+    padding: .2em .5em .2em .5em;
+    color: black;
+    display: block;
+    margin: .3em;
+    width: 7em;
+    text-align: center;
+}
+.anotherButton:hover {
+    background-color: lighten($color:red, $amount: 25%);
+}
+.topmenu a {
+    text-decoration-line: none;
+    color: black;
+    font-size: larger;
+    text-align: center;
+}
+.topnav {
+    padding-top: 1em;
+} 
+.b-icon {
+    background: url("../image/hot_plain_bread.svg") bottom right no-repeat;
+    padding-right: 20em;
+}
+//ná í stílsíðuna
+@import "layout",
+        "iconfonts",
+        "socialButts",
+        "advert",
+        "topmenu",
+        "table";

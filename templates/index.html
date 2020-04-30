@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body class="container">
+    <header class="headcol-2">
+        <div>
+            <a href="index.html">
+                <img class="image" src="image/my-recipes.svg" alt="">
+            </a>
+        </div>
+        <nav class="topnav">
+            <input type="checkbox" id="toggle" class="menuInput">
+            <label for="toggle" class="menuLabel"><span class="icon-menu"></span></label>
+            <ul class="topmenu">
+                <li>
+                    <a class="anotherButton" href="bread.html" class="current"><span class="icon-bread"></span> Bread</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-starters"></span> Starters</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-mainCourse"></span> Main courses</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-desserts"></span> Desserts</a>
+                </li>
+                <li>
+                    <a class="anotherButton" href="#"><span class="icon-drinks"></span> Drinks</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="col-3-1">
+            <div class="splashlogo">
+                {% include "toflur.html" %}
+            </div>
+            {% include "auglysing.html" %}
+            <div class="kynning">
+                <h2>
+                    Velkomin á Myrecipes vefsíðuna
+                </h2>
+            </div>
+        </section>
+        <div class="col-4">
+            <img class="imgs" src="image/desserts-hero.jpg" title="Desserts">
+            <img class="imgs" src="image/FigHamStarter.jpg" title="Starters">
+            <img class="imgs" src="image/Grilled-Buttermilk-Chicken.jpg" title="Main courses">
+            <img class="imgs" src="image/pide.jpg" title="Bread">
+        </div>
+        {% include "socialButts.html" %}
+    </main>
+</body>
+</html>
