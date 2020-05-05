@@ -34,7 +34,7 @@ bread_html = bread_template.render(posts=posts_metadata, tags=tags)
 with open('../verkefni-7_myrecipes-output/index.html', 'w', encoding="utf-8") as file:
     file.write(index_html)
 
-with open('../verkefni-7_myrecipes-output/bread.html', 'w', encoding="utf-8") as file:
+with open('../verkefni-7_myrecipes-output/bread.html', 'w') as file:
     file.write(bread_html)
 
 with open('../verkefni-7_myrecipes-output/reply.html', 'w', encoding="utf-8") as file:
